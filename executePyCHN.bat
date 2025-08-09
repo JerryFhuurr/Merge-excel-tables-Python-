@@ -17,18 +17,18 @@ if errorlevel 1 (
     exit /b 1
 )
 
-:: 检查 mergeTable.py 是否存在
-if not exist "mergeTable.py" (
-    echo 错误：当前目录中未找到 mergeTable.py
-    echo 请确保 mergeTable.py 与此批处理文件在同一文件夹中
+:: 检查 mergeTableCHN.py 是否存在
+if not exist "mergeTableCHN.py" (
+    echo 错误：当前目录中未找到 mergeTableCHN.py
+    echo 请确保 mergeTableCHN.py 与此批处理文件在同一文件夹中
     pause
     exit /b 1
 )
 
 :: 运行 Python 脚本
-echo 正在运行 mergeTable.py...
+echo 正在运行 mergeTableCHN.py...
 echo.
-python mergeTable.py
+python mergeTableCHN.py
 
 :: 检查脚本是否成功运行
 if errorlevel 1 (
